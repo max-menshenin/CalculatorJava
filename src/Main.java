@@ -1,6 +1,8 @@
-public class Main {
-    static String ArabicToRoman(int aNumber){
+import java.util.Iterator;
 
+public class Main {
+
+    static String ArabicToRoman(int aNumber){
         if(aNumber < 1 || aNumber > 3999){
             return "-1";
         }
@@ -18,7 +20,10 @@ public class Main {
 
         return rNumber;
     }
+
+    public static String calc(String input){
+        String[] allowedSigns = {"+", "-", "/", "*"};
+    }
     public static void main(String[] args) {
-        char[] allowedSigns = {'+', '-', '/', '*'};
     }
 }
